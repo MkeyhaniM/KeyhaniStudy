@@ -1,0 +1,24 @@
+{
+  "name": "keyhanistudy",
+  "version": "1.0.0",
+  "description": "project create a website about new technology , this being prepared \r LAVAL One > mainPage : done,\r LAVAL Two > responsive mainPage : Being prepared,",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MkeyhaniM/KeyhaniStudy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MkeyhaniM/KeyhaniStudy/issues"
+  },
+  "homepage": "https://github.com/MkeyhaniM/KeyhaniStudy#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "owl.carousel": "^2.3.4"
+  }
+}

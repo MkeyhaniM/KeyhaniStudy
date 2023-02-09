@@ -109,11 +109,6 @@
 }
 
 @font-face {
-    font-family : Shabnam;
-    src:url("/assets/font/peraion/shabnamFont/Shabnam.ttf");
-}
-
-@font-face {
-    font-family : Soltan;
-    src:url("/assets/font/peraion/SOLTAN/Sultan Adan 2Line .ttf");
+    font-family: Shabnam;
+    src: url("/assets/font/peraion/shabnamFont/Shabnam.ttf");
 }

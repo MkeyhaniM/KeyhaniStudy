@@ -7,63 +7,79 @@
 
 section#allWidthHeight {
     height: 100vh;
-    background-color: #D9AFD9;
-    background-image: linear-gradient(0deg, #0d6efd 0%, #9BCF1B 100%);
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #0d6efd 0%, #9bcf1b 100%);
     box-shadow: 0 14px 13px darkgrey;
 }
 
-section#allWidthHeight nav {
+section#allWidthHeight nav#navigator {
     width: 100% !important;
     height: 50px;
     margin: auto;
     position: fixed;
     background-color: whitesmoke;
     z-index: 10;
+    display: inline-block;
+}
+
+section#allWidthHeight nav#navigator div#parentUl {
+    width: 95%;
+}
+
+section#allWidthHeight nav#navigator div#bar {
+    width: 20%;
+}
+
+section#allWidthHeight nav#navigator div#bar {
+    width: 5%;
+    margin-left: 15px;
+    padding: 25px 0 0 0;
+    display: flex;
+    justify-content: end;
+    justify-items: center;
+}
+
+section#allWidthHeight div#bar i {
+    display: none;
+}
+
+section#allWidthHeight div#bar i:hover {
+    cursor: pointer;
 }
 
 section#allWidthHeight span#progressBar {
     z-index: 10;
     content: "";
     height: 5px;
-    background-color: #3120E0;
+    background-color: #3120e0;
     width: 0%;
     left: 0;
     top: 50px;
     position: fixed;
 }
 
-section#allWidthHeight div#intro {
-}
-
-section#allWidthHeight div#intro div {
-    padding-top: 100px;
-}
-
-section#allWidthHeight nav div#navbarNav {
-    display: inline-block;
-    height: inherit;
-}
-
-section#allWidthHeight nav div ul {
+section#allWidthHeight nav#navigator div#parentUl ul {
     padding: 0 20px 0 0;
     line-height: 50px;
     list-style: none;
     display: flex;
+    flex-direction: row;
+    font-family: iranSanseWebBlack;
 }
 
-section#allWidthHeight nav div ul li {
+section#allWidthHeight nav#navigator div ul li {
     margin: 0 12px;
     font-size: 17px;
 }
 
-section#allWidthHeight nav div ul li a {
+section#allWidthHeight nav#navigator div ul li a {
     display: block;
     color: black;
     text-decoration: none;
     transition: all 0.6s ease;
 }
 
-section#allWidthHeight nav div ul li ul#systems {
+section#allWidthHeight nav#navigator div ul li ul#systems {
     margin: 0;
     padding: 0;
     position: absolute;
@@ -74,7 +90,7 @@ section#allWidthHeight nav div ul li ul#systems {
     display: none;
 }
 
-section#allWidthHeight nav div ul li ul li {
+section#allWidthHeight nav#navigator div ul li ul li {
     width: 180px;
     font-size: 17px;
     padding: 0 10px 0 0;
@@ -82,19 +98,25 @@ section#allWidthHeight nav div ul li ul li {
     transition: all 0.6s cubic-bezier(0.53, 0.5, 0.55, 0.55);
 }
 
-section#allWidthHeight nav div ul li ul li a:hover {
+section#allWidthHeight nav#navigator div ul li ul li a:hover {
     padding: 0 14px 0 0;
     border-bottom: 2px solid #1bd3ff;
+}
+
+section#allWidthHeight div#intro {
+    position: relative;
+}
+
+section#allWidthHeight div#intro div.row {
+    padding-top: 100px;
 }
 
 section#allWidthHeight div div#getTheMineOfPage {
     height: 50px !important;
     padding: 0;
-    width: 250px;
+    width: 160px;
     text-align: center;
-    border: 2px solid #48ff12;
-    border-radius: 7px;
-    margin: 100px auto;
+    margin: 92px auto;
     display: flex;
     position: relative;
 }
@@ -104,7 +126,7 @@ section#allWidthHeight div div#getTheMineOfPage:hover {
 }
 
 section#allWidthHeight div div#getTheMineOfPage span {
-    margin: 0 80px 0 0 ;
+    margin: 0 80px 0 0;
     height: inherit;
     padding: 10px 0 0 0 !important;
     display: inline-block;
@@ -158,7 +180,7 @@ section#parentSlider section#slider {
 }
 
 section#parentSlider section#slider div#owlSlider div img {
-    border: #9BCF1B !important;
+    border: #9bcf1b !important;
 }
 
 section#parentSlider section#slider div#owlSlider a {
@@ -184,8 +206,8 @@ section#parentArticle {
 }
 
 section#parentArticle div#article {
-    border: #CDF0EA solid 3px;
-    box-shadow: 3px 3px 4px #CDF0EA;
+    border: #cdf0ea solid 3px;
+    box-shadow: 3px 3px 4px #cdf0ea;
     padding: 4px;
     border-radius: 5px 5px 5px 5px;
 }
@@ -201,11 +223,11 @@ section#parentArticle div#article div div {
     display: flex;
     padding: 5px;
     transition: all 0.6s ease-in;
-    border-right: 2px solid #CDF0EA;
+    border-right: 2px solid #cdf0ea;
 }
 
 section#parentArticle div#article div div:hover {
-    background-color: #CDF0EA;
+    background-color: #cdf0ea;
     padding-right: 20px;
 }
 
@@ -218,7 +240,7 @@ section#parentArticle div#article div div p {
 }
 
 section#parentArticle div#article div div span {
-    background: url("/assets/img/arrow/double-left-100.png");
+    background: url("/assets/img/arrow/down.png");
     display: inline-block;
     width: 40px;
     line-height: 10px;
@@ -226,7 +248,6 @@ section#parentArticle div#article div div span {
     background-position: left center;
     background-repeat: no-repeat;
 }
-
 
 /*///////////___LOGO___//////////////////*/
 
@@ -252,11 +273,10 @@ section.container-fluid section div#IntroductionLogo span#motaleSpan {
     text-shadow: 2px 2px 5px black;
 }
 
-
 /*//////////////____Attributes____//////////////*/
 
 section.container-fluid section div#Attributes {
-    box-shadow: 3px 3px 5px #F9F9F9;
+    box-shadow: 3px 3px 5px #f9f9f9;
     margin: 0;
     padding: 0 !important;
 }
@@ -283,18 +303,17 @@ section.container-fluid section div#Attributes div.col-xl-4 div.lead {
 }
 
 section.container-fluid section div#Attributes div.col-xl-4 div#temperature {
-    background-color: #12B857;
+    background-color: #12b857;
     padding-right: 30px !important;
 }
 
 section.container-fluid section div#Attributes div.col-xl-4 div#chartLine {
-    background-color: #1565C0;
+    background-color: #1565c0;
 }
 
 section.container-fluid section div#Attributes div.col-xl-4 div#microchip {
-    background-color: #F15642;
+    background-color: #f15642;
 }
-
 
 section.container-fluid section div#Attributes div.col-xl-4 div.lead h4 {
     position: absolute;
@@ -320,13 +339,13 @@ section.container-fluid section div#Attributes div.col-xl-4 div.lead p {
 
 /*//////////////////___SYSTEM_OPERATION___/////////////////*/
 
-
 section#showSomeSystems {
-    background-color: #ECC5FB;
+    background-color: #ecc5fb;
 }
 
 section#showSomeSystems section#parentSystemOperation {
     direction: rtl;
+    font-family: EstedadBold;
 }
 
 section#showSomeSystems section#parentSystemOperation div.row {
@@ -338,13 +357,23 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div {
     background-color: azure;
 }
 
-section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div h3 {
+section#showSomeSystems
+section#parentSystemOperation
+div.row
+div.col-xl-4
+div
+h3 {
     font-family: Digikala;
     margin: 60px 20px 0 0;
     display: inline-block;
 }
 
-section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div p {
+section#showSomeSystems
+section#parentSystemOperation
+div.row
+div.col-xl-4
+div
+p {
     margin: 18px 0 0 0;
     padding: 0 40px 0 48px;
     font-family: Shabnam;
@@ -379,19 +408,350 @@ footer section#in div div div p {
     font-size: 17px;
 }
 
-/*RESPONSIVE*/
+/*RESPONSIVE_navgator*/
 
-@media only screen and (min-width: 370px) {
-    section.container-fluid section#allWidthHeight {
-
+@media only screen and (min-width: 320px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl {
+        max-height: 0;
+        position: relative;
     }
 
-    section.container-fluid section#allWidthHeight nav, section.container-fluid section#allWidthHeight div.container {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: none;
+    }
 
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation ul {
+        display: none;
+    }
+
+    section#allWidthHeight nav#navigator div#bar {
+        position: absolute;
+        left: 0 !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation {
+        background-color: transparent !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation:hover {
+        background-color: transparent !important;
+    }
+
+    section#allWidthHeight div#bar i {
+        display: inline-block;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy {
+        font-size: 25px !important;
+        padding-top: 1.7rem;
+        text-align: center;
+        font-family: EstedadThin !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingPrefaceKeyhanStudy {
+        text-align: center;
+        font-size: 16px;
+        font-family: iranSanseWeb;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingBioKeyhanStudy {
+        font-size: 15px !important;
+        margin-top: 10px !important;
+        padding: 0 1rem 1rem 1rem !important;
+        font-family: iranSanseWebMedium;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy {
+        z-index: 20 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy li {
+        font-size: 15px !important;
+        margin-right: 20px;
+    }
+
+    /*section.container-fluid div#intro div.row div#pictureOfPrefaceKeyhanStudy {*/
+    /*    padding: 2rem;*/
+    /*}*/
+    section.container-fluid section#allWidthHeight div#intro div.row div#pictureOfPrefaceKeyhanStudy {
+        padding: 50px 0 0 60px;
+        position: relative;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div#pictureOfPrefaceKeyhanStudy img#pic {
+        width: 120px !important;
+        z-index: 1 !important;
+        display: none;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage {
+        position: absolute;
+        top: 470px !important;
+        right: 78px !important;
+        z-index: 10 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage button.btn {
+        display: block;
+        font-family: iranSanseWebUltraLight;
+        font-size: 14px !important;
+        border: black solid 1px;
+        z-index: 10 !important;
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 400px ) {
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingBioKeyhanStudy {
+        margin-top: 40px !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div#pictureOfPrefaceKeyhanStudy img#pic {
+        display: block;
+        width: 300px !important;
+        position: absolute;
+        top: 370px;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage {
+        position: absolute;
+        top: 520px !important;
+        right: 95px !important;
+        z-index: 10 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage button.btn {
+        display: block;
+        background-color: #59acff !important;
+        font-family: iranSanseWebUltraLight;
+        font-size: 14px !important;
+        border: black solid 1px;
+        z-index: 10 !important;
+    }
+}
+
+@media only screen and (min-width: 405px) and (max-width: 570px) {
+    section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy {
+        font-size: 37px !important;
+        padding-top: 1.7rem;
+        text-align: center;
+        font-family: EstedadThin !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingPrefaceKeyhanStudy {
+        text-align: center;
+        font-size: 21px;
+        font-family: iranSanseWeb;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingBioKeyhanStudy {
+        padding: 1rem !important;
+        font-size: 18px !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy li {
+        font-family: koheNoor-Medium;
+        color: #e9f3fe;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div#pictureOfPrefaceKeyhanStudy img#pic {
+        display: block;
+        width: 400px !important;
+        position: absolute;
+        top: 420px;
+        right: 10px;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage {
+        position: absolute;
+        top: 680px !important;
+        right: 130px !important;
+        z-index: 10 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage button.btn {
+        background-color: #59acff !important;
+        display: block;
+        font-family: iranSanseWebUltraLight;
+        font-size: 14px !important;
+        border: black solid 1px;
+        z-index: 10 !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+    section.container-fluid section#allWidthHeight nav#navigator {
+        display: flex;
+        background-color: whitesmoke;
+        height: 300px !important;
+        transition: all 1s ease !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro {
+        padding-top: 18px !important;
     }
 
     section.container-fluid section#allWidthHeight nav#navigator {
+        height: 3rem !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive {
+        display: flex;
+        width: 100%;
+        min-height: 300px !important;
+        background-color: #f5f5f5;
+        transition: all 1s ease !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul li {
+        height: 40px;
+        font-family: SahelBold;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
         display: flex;
         flex-direction: row;
+        padding: 0 3px 0 0;
+        font-family: SahelBold;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNabigation {
+        display: none;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy,
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingPrefaceKeyhanStudy {
+        text-align: right;
+        font-size: 26px;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingBioKeyhanStudy {
+        margin: 20px 0 0 0 !important;
+        padding: 1rem !important;
+        font-size: 14px !important;
+        color: rgba(10, 38, 227, 0.89) !important;
+        font-family: koheNoor-Medium;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy {
+        z-index: 1 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy li {
+        font-size: 13px !important;
+        margin-right: 30px !important;
+        color: rgba(10, 38, 227, 0.69);
+        font-family: koheNoor-Medium;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div#pictureOfPrefaceKeyhanStudy img#pic {
+        position: absolute;
+        top: 420px;
+        right: 10px;
+        display: block;
+        transform: translateX(-130px) !important;
+        width: 600px !important;
+        top: 360px;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage {
+        position: absolute;
+        z-index: 10 !important;
+        right: 241px !important;
+        top: 670px !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage button.btn {
+        background-color: #59acff !important;
+        display: block;
+        font-family: iranSanseWebUltraLight;
+        font-size: 14px !important;
+        border: black solid 1px;
+        z-index: 10 !important;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 800px) {
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3px 0 0;
+        font-family: SahelBold;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNabigation {
+        display: none;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy {
+        font-size: 40px !important;
+
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingPrefaceKeyhanStudy {
+        text-align: right;
+        font-size: 26px;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row p#headingBioKeyhanStudy {
+        margin: 20px 0 0 0 !important;
+        padding: 1rem !important;
+        font-size: 14px !important;
+        color: rgba(10, 38, 227, 0.89) !important;
+        font-family: koheNoor-Medium;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy {
+        z-index: 1 !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy li {
+        font-size: 13px !important;
+        margin-right: 30px !important;
+        color: rgba(10, 38, 227, 0.69);
+        font-family: koheNoor-Medium;
+    }
+
+    section.container-fluid section#allWidthHeight div#intro div#pictureOfPrefaceKeyhanStudy img#pic {
+        position: absolute;
+        top: 420px;
+        right: 10px;
+        display: block;
+        transform: translateX(-130px) !important;
+        width: 600px !important;
+        top: 360px;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage {
+        position: absolute;
+        z-index: 10 !important;
+        right: 241px !important;
+        top: 670px !important;
+    }
+
+    section.container-fluid section#allWidthHeight div#getTheMineOfPage button.btn {
+        background-color: #59acff !important;
+        display: block;
+        font-family: iranSanseWebUltraLight;
+        font-size: 14px !important;
+        border: black solid 1px;
+        z-index: 10 !important;
     }
 }

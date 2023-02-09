@@ -13,6 +13,14 @@ $(document).ready(function () {
         })
     })
 
+    $("#barNabigation").click(e => {
+        if (!$('section.container-fluid section#allWidthHeight nav#navigator div:first-child').hasClass("responsive")) {
+            $('section.container-fluid section#allWidthHeight nav#navigator div:first-child').addClass('responsive')
+        } else {
+            $('section.container-fluid section#allWidthHeight nav#navigator div:first-child').removeClass('responsive')
+        }
+    })
+
     $(".owl-carousel").owlCarousel({
         margin: 10,
         items: 3,

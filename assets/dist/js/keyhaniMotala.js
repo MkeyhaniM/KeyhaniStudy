@@ -57,9 +57,6 @@ $(document).ready(function () {
                 mergeFit: false,
                 items: 2,
             },
-            680: {
-                items: 3
-            },
             900: {
                 items: 3,
             },

@@ -1,0 +1,66 @@
+section#allWidthHeight nav#navigator {
+  width: 100% !important;
+  height: 50px;
+  margin: auto;
+  position: fixed;
+  background-color: whitesmoke;
+  z-index: 100;
+  display: inline-block;
+}
+
+section#allWidthHeight nav#navigator div#parentUl {
+  width: 95%;
+}
+
+section#allWidthHeight nav#navigator div#bar {
+  width: 20%;
+}
+
+section#allWidthHeight nav#navigator div#bar {
+  width: 5%;
+  margin-left: 15px;
+  padding: 25px 0 0 0;
+  display: flex;
+  justify-content: end;
+  justify-items: center;
+}
+
+section#allWidthHeight div#bar i {
+  display: none;
+}
+
+section#allWidthHeight div#bar i:hover {
+  cursor: pointer;
+}
+
+section#allWidthHeight span#progressBar {
+  z-index: 10;
+  content: "";
+  height: 5px;
+  background-color: #3120e0;
+  width: 0%;
+  left: 0;
+  top: 50px;
+  position: fixed;
+}
+
+section#allWidthHeight nav#navigator div#parentUl ul {
+  padding: 0 20px 0 0;
+  line-height: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-family: iranSanseWebBlack;
+}
+
+section#allWidthHeight nav#navigator div ul li {
+  margin: 0 12px;
+  font-size: 17px;
+}
+
+section#allWidthHeight nav#navigator div ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  transition: all 0.6s ease;
+}

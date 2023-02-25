@@ -1,18 +1,19 @@
 @import "font.css";
+@import "navigator.css";
 
 .container-fluid {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-section#allWidthHeight {
+.container-fluid section#allWidthHeight {
     height: 100vh;
     background-color: #d9afd9;
     background-image: linear-gradient(0deg, #0d6efd 0%, #9bcf1b 100%);
     box-shadow: 0 14px 13px darkgrey;
 }
 
-section#allWidthHeight nav#navigator {
+.container-fluid section#allWidthHeight nav#navigator {
     width: 100% !important;
     height: 50px;
     margin: auto;
@@ -22,96 +23,15 @@ section#allWidthHeight nav#navigator {
     display: inline-block;
 }
 
-section#allWidthHeight nav#navigator div#parentUl {
-    width: 95%;
-}
-
-section#allWidthHeight nav#navigator div#bar {
-    width: 20%;
-}
-
-section#allWidthHeight nav#navigator div#bar {
-    width: 5%;
-    margin-left: 15px;
-    padding: 25px 0 0 0;
-    display: flex;
-    justify-content: end;
-    justify-items: center;
-}
-
-section#allWidthHeight div#bar i {
-    display: none;
-}
-
-section#allWidthHeight div#bar i:hover {
-    cursor: pointer;
-}
-
-section#allWidthHeight span#progressBar {
-    z-index: 10;
-    content: "";
-    height: 5px;
-    background-color: #3120e0;
-    width: 0%;
-    left: 0;
-    top: 50px;
-    position: fixed;
-}
-
-section#allWidthHeight nav#navigator div#parentUl ul {
-    padding: 0 20px 0 0;
-    line-height: 50px;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    font-family: iranSanseWebBlack;
-}
-
-section#allWidthHeight nav#navigator div ul li {
-    margin: 0 12px;
-    font-size: 17px;
-}
-
-section#allWidthHeight nav#navigator div ul li a {
-    display: block;
-    color: black;
-    text-decoration: none;
-    transition: all 0.6s ease;
-}
-
-section#allWidthHeight nav#navigator div ul li ul#systems {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    right: 50px;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    border: 2px solid #1bd3ff;
-    display: none;
-}
-
-section#allWidthHeight nav#navigator div ul li ul li {
-    width: 180px;
-    font-size: 17px;
-    padding: 0 10px 0 0;
-    display: block;
-    transition: all 0.6s cubic-bezier(0.53, 0.5, 0.55, 0.55);
-}
-
-section#allWidthHeight nav#navigator div ul li ul li a:hover {
-    padding: 0 14px 0 0;
-    border-bottom: 2px solid #1bd3ff;
-}
-
-section#allWidthHeight div#intro {
+.container-fluid section#allWidthHeight div#intro {
     position: relative;
 }
 
-section#allWidthHeight div#intro div.row {
+.container-fluid section#allWidthHeight div#intro div.row {
     padding-top: 100px;
 }
 
-section#allWidthHeight div div#getTheMineOfPage {
+.container-fluid section#allWidthHeight div div#getTheMineOfPage {
     height: 50px !important;
     padding: 0;
     width: 160px;
@@ -121,18 +41,18 @@ section#allWidthHeight div div#getTheMineOfPage {
     position: relative;
 }
 
-section#allWidthHeight div div#getTheMineOfPage:hover {
+.container-fluid section#allWidthHeight div div#getTheMineOfPage:hover {
     cursor: pointer;
 }
 
-section#allWidthHeight div div#getTheMineOfPage span {
+.container-fluid section#allWidthHeight div div#getTheMineOfPage span {
     margin: 0 80px 0 0;
     height: inherit;
     padding: 10px 0 0 0 !important;
     display: inline-block;
 }
 
-section#allWidthHeight div div#getTheMineOfPage img {
+.container-fluid section#allWidthHeight div div#getTheMineOfPage img {
     width: 30px;
     padding: 0;
     display: inline;
@@ -144,19 +64,13 @@ section#allWidthHeight div div#getTheMineOfPage img {
     animation-iteration-count: infinite;
 }
 
-section#allWidthHeight div div#getTheMineOfPage img:first-child {
+.container-fluid section#allWidthHeight div div#getTheMineOfPage img:first-child {
     right: 195px;
 }
 
-section#allWidthHeight nav div ul li a:hover {
+.container-fluid section#allWidthHeight nav div ul li a:hover {
     transform: scale(0.95);
     color: rgba(18, 38, 32, 0.87);
-}
-
-#parentSearchBox #btnGroupDrop1 {
-    float: left;
-    background-color: red;
-    padding: 0 0 0 0;
 }
 
 @keyframes aniArrow {
@@ -420,10 +334,6 @@ footer section#in div div div p {
         display: none;
     }
 
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation ul {
-        display: none;
-    }
-
     section#allWidthHeight nav#navigator div#bar {
         position: absolute;
         left: 0 !important;
@@ -471,9 +381,6 @@ footer section#in div div div p {
         margin-right: 20px;
     }
 
-    /*section.container-fluid div#intro div.row div#pictureOfPrefaceKeyhanStudy {*/
-    /*    padding: 2rem;*/
-    /*}*/
     section.container-fluid section#allWidthHeight div#intro div.row div#pictureOfPrefaceKeyhanStudy {
         padding: 50px 0 0 60px;
         position: relative;

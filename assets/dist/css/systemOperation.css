@@ -1,0 +1,141 @@
+@import "font.css";
+@import "navigator.css";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@media only screen and (min-width: 320px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl {
+        max-height: 0;
+        position: relative;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: none;
+    }
+
+    section#allWidthHeight nav#navigator div#bar {
+        position: absolute;
+        left: 0 !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation {
+        background-color: transparent !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation:hover {
+        background-color: transparent !important;
+    }
+
+    section#allWidthHeight div#bar i {
+        display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    section.container-fluid section#allWidthHeight nav#navigator {
+        display: flex;
+        background-color: whitesmoke;
+        height: 300px !important;
+        transition: all 1s ease !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator {
+        height: 3rem !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive {
+        display: flex;
+        width: 100%;
+        min-height: 300px !important;
+        background-color: #f5f5f5;
+        transition: all 1s ease !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul li {
+        height: 40px;
+        font-family: SahelBold;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: flex;
+    }
+
+    section#allWidthHeight div#bar i {
+        display: none;
+    }
+}
+
+div.container-fluid {
+    padding: 120px 0 0 0;
+}
+
+div.container-fluid div.container {
+    border-radius: 20px;
+}
+
+div.container-fluid div.container article#systemOperationInter h3 {
+    margin-right: 10px;
+    font-family: SahelBold;
+}
+
+div.container-fluid div.container article#systemOperationInter p#describingSystemOperation {
+    font-family: iranSanseWebMedium;
+    display: inline-block;
+}
+
+div.container-fluid div.container article#systemOperationInter p#describingSystemOperation2 {
+    font-family: iranSanseWebMedium;
+    display: inline-block;
+    width: 700px;
+
+}
+
+div.container-fluid div.container article#systemOperationInter p#describingSystemOperation3 {
+    font-family: iranSanseWebMedium;
+    display: inline;
+    width: 500px;
+}
+
+div.container-fluid div.container article#systemOperationInter img {
+    display: inline-block;
+    float: left;
+}
+
+div.container-fluid div.container article div#introductionNEW {
+    display: block;
+    margin: 40px;
+}
+
+div.container-fluid div.container article div#introductionNEW {
+    font-family: iranSanseWebMedium;
+}
+
+div.container-fluid div.container article div#introductionNEW img#What-is-OS {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+div.container-fluid div.container article div#introductionWindows {
+    font-family: iranSanseWebBold;
+}
+
+div.container-fluid div.container article div#introductionMobile {
+    font-family: iranSanseWebMedium;
+}
+
+div.container-fluid div.container article div#introductionMobile img {
+    margin:40px auto;
+    display: block;
+}

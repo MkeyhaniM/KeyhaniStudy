@@ -13,14 +13,6 @@ $(document).ready(function () {
         })
     })
 
-    $("#barNabigation").click(e => {
-        if (!$('section.container-fluid section#allWidthHeight nav#navigator div:first-child').hasClass("responsive")) {
-            $('section.container-fluid section#allWidthHeight nav#navigator div:first-child').addClass('responsive')
-        } else {
-            $('section.container-fluid section#allWidthHeight nav#navigator div:first-child').removeClass('responsive')
-        }
-    })
-
     $(".owl-carousel").owlCarousel({
         margin: 10,
         items: 3,
@@ -74,12 +66,3 @@ $(document).ready(function () {
 
 
 });
-
-window.addEventListener("scroll", e => {
-    let sTop = document.documentElement.scrollTop;
-    let sHeight = document.documentElement.scrollHeight;
-    let cHeight = document.documentElement.clientHeight;
-
-    let mainProgress = Math.floor(sTop / (sHeight - cHeight) * 100)
-    document.getElementById('progressBar').style.width = mainProgress + "%"
-})

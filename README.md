@@ -1,4 +1,4 @@
 # KeyhaniStudy
-project create a website about new technology , this being prepared 
-LAVAL One > mainPage : done,
-LAVAL Two > responsive mainPage : Being prepared,
+Project create a website about new technology.
+
+<h3>What is on !</h3>

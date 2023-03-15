@@ -1,6 +1,13 @@
 @import "font.css";
 @import "navigator.css";
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Holtwood+One+SC&family=Paytone+One&display=swap');
+
+:root {
+    --fontShapeSystemOperation: 'Holtwood One SC', sans-serif;
+    --font-p-SystemOperation: "iranSanseWebMedium";
+    --font-heading-SystemOperation: SahelBold;
+}
 
 * {
     margin: 0;
@@ -87,23 +94,23 @@ div.container-fluid div.container {
 
 div.container-fluid div.container article#systemOperationInter h3 {
     margin-right: 10px;
-    font-family: SahelBold;
+    font-family: var(--font-heading-SystemOperation);
+    border-right: 3px solid #000;
 }
 
 div.container-fluid div.container article#systemOperationInter p#describingSystemOperation {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-p-SystemOperation);
     display: inline-block;
 }
 
 div.container-fluid div.container article#systemOperationInter p#describingSystemOperation2 {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-p-SystemOperation);
     display: inline-block;
     width: 700px;
-
 }
 
 div.container-fluid div.container article#systemOperationInter p#describingSystemOperation3 {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-p-SystemOperation);
     display: inline;
     width: 500px;
 }
@@ -119,7 +126,7 @@ div.container-fluid div.container article div#introductionNEW {
 }
 
 div.container-fluid div.container article div#introductionNEW {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-p-SystemOperation);
 }
 
 div.container-fluid div.container article div#introductionNEW img#What-is-OS {
@@ -133,7 +140,7 @@ div.container-fluid div.container article div#introductionWindows {
 }
 
 div.container-fluid div.container article div#introductionMobile {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-p-SystemOperation);
 }
 
 div.container-fluid div.container article div#introductionMobile img {
@@ -144,6 +151,7 @@ div.container-fluid div.container article div#introductionMobile img {
 section.container div#Windows {
     border-radius: 17px;
     padding: 1rem;
+    box-shadow: -3px 0px 64px -2px #85CDFD;
 }
 
 section.container div#Windows div.details {
@@ -152,7 +160,7 @@ section.container div#Windows div.details {
 }
 
 section.container div#Windows div.details div h2 {
-    font-family: iranSanseWebMedium;
+    font-family: var(--font-heading-SystemOperation);
 }
 
 section.container div#Windows div.shape {
@@ -160,11 +168,6 @@ section.container div#Windows div.shape {
     height: 150px;
     background-color: #191825;
     border-radius: 15px;
-}
-
-section.container div#Windows div.details div.benefit,
-section.container div#Windows div.details div.Disadvantages {
-    margin: 20px;
 }
 
 section.container div#Windows div.details div.shape div {
@@ -177,10 +180,15 @@ section.container div#Windows div.details div.shape div {
     border-radius: 15px;
 }
 
+section.container div#Windows div.details div.benefit,
+section.container div#Windows div.details div.Disadvantages {
+    margin: 20px;
+}
+
 section.container div#Windows div.details div.shape div h1 {
     text-align: center;
     margin: 40px 0;
-    font-family: 'Holtwood One SC', sans-serif;
+    font-family: var(--fontShapeSystemOperation);
 }
 
 section.container div#Windows div.details div.benefit p,
@@ -208,16 +216,79 @@ section.container div#Windows span {
     font-family: EstedadNormal !important;
 }
 
+section.container div#Linux {
+    margin-top: 100px;
+    border-radius: 17px;
+    box-shadow: -3px 0px 64px -2px #BFACE2;
+}
 
+section.container div#Linux h2 {
+    font-family: var(--font-heading-SystemOperation);
+}
 
+section.container div#Linux div.details {
+    display: flex;
+    justify-content: space-between;
+}
 
+section.container div#Linux div.details div.benefit {
+    font-family: var(--font-p-SystemOperation);
+    padding: 0 20px;
+}
 
+section.container div#Linux div.details div.shape {
+    width: 300px;
+    height: 150px;
+    background-color: #191825;
+    border-radius: 15px;
+}
 
+section.container div#Linux div.Disadvantages {
+    padding: 0 36px;
+    font-family: var(--font-heading-SystemOperation);
+}
 
+section.container div#Linux div.details div.shape div {
+    width: 290px;
+    height: 140px;
+    float: left;
+    margin: 25px;
+    color: #27291b;
+    background-color: #BFACE2;
+    border-radius: 15px;
+}
 
+section.container div#Linux div.details div.shape div h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: var(--fontShapeSystemOperation);
+}
 
+section.container div#Linux p {
+    font-family: var(--font-p-SystemOperation);
 
+}
 
+section.container div#Linux div.DistributionOfLinux h3 {
+    font-family: var(--font-heading-SystemOperation);
+}
 
+section.container div#Linux div.DistributionOfLinux ul {
+    font-family: 'Courier Prime', monospace
+}
 
+section.container div#Linux div.architectOfLinux img {
+    margin: 50px auto;
+}
 
+.border-right {
+    border-right: 3px solid #000;
+}
+
+.border-rightWindows {
+    border-right: 4px solid #85CDFD;
+}
+
+.border-rightLinux {
+    border-right: 4px solid #BFACE2;
+}

@@ -2,11 +2,12 @@
 @import "navigator.css";
 @import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Holtwood+One+SC&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&family=Holtwood+One+SC&family=Paytone+One&display=swap');
 
 :root {
     --fontShapeSystemOperation: 'Holtwood One SC', sans-serif;
     --font-p-SystemOperation: "iranSanseWebMedium";
-    --font-heading-SystemOperation: SahelBold;
+    --font-heading-SystemOperation: SahelBold, 'Courier Prime', 'Holtwood One SC', 'Paytone One';
 }
 
 * {
@@ -266,7 +267,6 @@ section.container div#Linux div.details div.shape div h1 {
 
 section.container div#Linux p {
     font-family: var(--font-p-SystemOperation);
-
 }
 
 section.container div#Linux div.DistributionOfLinux h3 {
@@ -281,6 +281,55 @@ section.container div#Linux div.architectOfLinux img {
     margin: 50px auto;
 }
 
+section.container div#MacOs {
+    margin-top: 100px;
+    border-radius: 17px;
+    box-shadow: -3px 0px 64px -2px #E96479;
+}
+
+section.container div#MacOs h2 {
+    font-family: var(--font-heading-SystemOperation);
+}
+
+section.container div#MacOs div.details div.shape {
+    width: 300px;
+    height: 150px;
+    background-color: #191825;
+    border-radius: 15px;
+}
+
+section.container div#MacOs div.details div.shape div {
+    width: 290px;
+    height: 140px;
+    float: left;
+    margin: 25px;
+    color: #27291b;
+    background-color: #FF0303;
+    border-radius: 15px;
+}
+
+section.container div#MacOs div.details div.shape div h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: var(--fontShapeSystemOperation);
+}
+
+section.container div#MacOs div.details div.benefit {
+    font-family: var(--font-p-SystemOperation);
+}
+
+section.container div#MacOs div.Disadvantages {
+    font-family: var(--font-p-SystemOperation);
+}
+
+section.container div#MacOs div.descriptionMac {
+    font-family:iranSanseWeb ;
+    padding: 10px 0;
+}
+
+section.container div#MacOs div.descriptionMac p{
+    padding: 0 2rem 0 5rem;
+}
 .border-right {
     border-right: 3px solid #000;
 }
@@ -291,4 +340,8 @@ section.container div#Linux div.architectOfLinux img {
 
 .border-rightLinux {
     border-right: 4px solid #BFACE2;
+}
+
+.border-rightMacOS {
+    border-right: 4px solid #FF0303;
 }

@@ -323,12 +323,58 @@ section.container div#MacOs div.Disadvantages {
 }
 
 section.container div#MacOs div.descriptionMac {
-    font-family:iranSanseWeb ;
+    font-family: iranSanseWeb;
     padding: 10px 0;
 }
 
-section.container div#MacOs div.descriptionMac p{
+section.container div#MacOs div.descriptionMac p {
     padding: 0 2rem 0 5rem;
+}
+
+section.container div#Android {
+    margin-top: 100px;
+    border-radius: 17px;
+    box-shadow: -3px 0px 64px -2px #3DDB84;
+}
+
+section.container div#Android h2 {
+    font-family: var(--font-heading-SystemOperation);
+}
+
+section.container div#Android div.details div.shape {
+    width: 300px;
+    height: 150px;
+    background-color: #191825;
+    border-radius: 15px;
+}
+
+section.container div#Android div.details div.shape div {
+    width: 290px;
+    height: 140px;
+    float: left;
+    margin: 25px;
+    color: #27291b;
+    background-color: #3DDB84;
+    border-radius: 15px;
+}
+
+section.container div#Android div.details div.shape div h1 {
+    text-align: center;
+    margin: 40px 0;
+    font-family: var(--fontShapeSystemOperation);
+}
+
+section.container div#Android div.details {
+    font-family: var(--font-p-SystemOperation);
+}
+
+section.container div#Android div.descriptionAndroid p {
+    padding: 0 2rem 0 5rem;
+    font-family: iranSanseWeb;
+}
+
+section.container div#Android div.descriptionAndroid div h3 {
+    font-family: var(--font-heading-SystemOperation);
 }
 .border-right {
     border-right: 3px solid #000;
@@ -344,4 +390,8 @@ section.container div#MacOs div.descriptionMac p{
 
 .border-rightMacOS {
     border-right: 4px solid #FF0303;
+}
+
+.border-rightAndroid {
+    border-right: 4px solid #3DDB84;
 }

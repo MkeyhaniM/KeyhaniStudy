@@ -1,5 +1,6 @@
 @import "font.css";
 @import "navigator.css";
+@import "footer.css";
 
 .container-fluid {
     margin: 0 !important;
@@ -302,25 +303,6 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
     border-right: 1px solid silver;
 }
 
-/*/////////////////___Footer___/////////////////////*/
-
-footer section div span {
-    font-family: Digikala;
-    font-size: 20px;
-}
-
-footer section#in div div div h6 {
-    font-family: Digikala;
-}
-
-footer section#in div div div p {
-    font-family: koheNoor-Medium;
-}
-
-#emailContact {
-    font-family: "Segoe UI Symbol";
-    font-size: 17px;
-}
 
 /*RESPONSIVE_navgator*/
 

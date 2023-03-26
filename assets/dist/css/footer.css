@@ -1,0 +1,19 @@
+footer section div span {
+  font-family: Digikala;
+  font-size: 20px;
+}
+
+footer section#in div div div h6 {
+  font-family: Digikala;
+}
+
+footer section#in div div div p {
+  font-family: koheNoor-Medium;
+}
+
+#emailContact {
+  font-family: "Segoe UI Symbol";
+  font-size: 17px;
+}
+
+/*# sourceMappingURL=footer.css.map */

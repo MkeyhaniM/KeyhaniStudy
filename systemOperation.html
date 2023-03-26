@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
     <!--    <link rel="stylesheet" href="requied/fontawesome-free-6.2.1-web/css/all.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
@@ -14,7 +14,6 @@
     <title>سیستم عامل</title>
 </head>
 <body>
-
 <section class="container-fluid" style="direction: rtl;">
     <section id="allWidthHeight">
         <nav id="navigator">
@@ -41,8 +40,37 @@
     </section>
 </section>
 
+<div id="stepperVertical">
+    <div id="progressStepper"></div>
+    <div id="parentSteppes">
+        <div class="steppes allowedSteppes">
+            <div class="shapeStepperVertical  shadow-lg activeSteppes"><span>1</span></div>
+            <!--            <h3 class="titleStepper">معرفی</h3>-->
+        </div>
+        <div class="steppes allowedSteppes">
+            <div class="shapeStepperVertical shadow-lg"><span>2</span></div>
+            <!--            <h3 class="titleStepper">ویندوز</h3>-->
+        </div>
+        <div class="steppes allowedSteppes">
+            <div class="shapeStepperVertical shadow-lg"><span>3</span></div>
+            <!--            <h3 class="titleStepper">لینوکس</h3>-->
+        </div>
+        <div class="steppes allowedSteppes">
+            <div class="shapeStepperVertical shadow-lg"><span>4</span></div>
+            <!--            <h3 class="titleStepper">مک بوک</h3>-->
+        </div>
+        <div class="steppes">
+            <div class="shapeStepperVertical shadow-lg"><span>5</span></div>
+            <!--            <h3 class="titleStepper">اندروید</h3>-->
+        </div>
+    </div>
+    <div style="direction: ltr" id="parentButtons" class="btn-group " role="group">
+        <button type="button" class="btn btn-danger shadow" id="prev">قبلی</button>
+        <button type="button" class="btn btn-primary shadow" id="next">بعدی</button>
+    </div>
+</div>
 
-<div class="container-fluid">
+<div href="introduction" class="container-fluid">
     <div id="Introduction" class="container bg-secondary bg-opacity-10 p-4 shadow-lg">
         <article id="systemOperationInter" style="direction: rtl;">
             <h3 id="headingDescribingSystemOperation" class="px-2 py-2">سیستم عامل چیست ؟</h3>
@@ -360,7 +388,8 @@
                 </li>
             </ul>
         </div>
-        <img class="d-block img-thumbnail" src="assets/img/system%20operation/macOS-3.jpg" style="margin: 0 auto" alt="MacOS picture">
+        <img class="d-block img-thumbnail" src="assets/img/system%20operation/macOS-3.jpg" style="margin: 0 auto"
+             alt="MacOS picture">
         <div class="descriptionMac d-block">
             <p style="text-align: justify;">
                     <span style="color: #333399;"><strong>مک او اس</strong>
@@ -403,7 +432,7 @@
         </div>
     </div>
     <div class="bg-secondary bg-opacity-10 p-4" id="Android">
-         <h2 class="mt-4 p-2 border-rightAndroid">سیستم عامل Android</h2>
+        <h2 class="mt-4 p-2 border-rightAndroid">سیستم عامل Android</h2>
         <div class="details d-flex justify-content-around">
             <div class="benefit">
                 <p>مزایا</p>
@@ -441,7 +470,8 @@
                 </div>
             </div>
         </div>
-        <img class="img-thumbnail my-5 d-block" style="margin: 0 auto" src="assets/img/system%20operation/Android.webp" width="700px" alt="Android picture">
+        <img class="img-thumbnail my-5 d-block" style="margin: 0 auto" src="assets/img/system%20operation/Android.webp"
+             width="700px" alt="Android picture">
         <div class="descriptionAndroid d-block">
             <p>
                 اندروید یک سیستم عامل موبایل است که در حدود 13 سال پیش، توسط شرکت گوگل توسعه یافته و از آن زمان تاکنون
@@ -487,6 +517,93 @@
     </div>
 </section>
 
+<footer class="text-center mt-5 text-lg-start bg-light text-muted" style="direction: rtl">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span>با ما همراه باشید در صفحات مجازی دیگر</span>
+        </div>
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </section>
+
+    <section id="in">
+        <div class="container text-center text-md-start mt-5">
+            <div style="text-align: right" class="row mt-3">
+                <div class="col-m-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        معرفی
+                    </h6>
+                    <p>
+                        در این وب سایت شما می توانید از اخرین اخبار دیگه تکنولوژی با خبر شوید و شناخت خود را نسبت به
+                        دنیا جدیدافزایش دهید.
+                        میتوانید بین عوامل های مقایسه انجام بدهید.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        مفید
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">اب و هوا</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">مقایسه</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">تکنولوژی</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">سیستم عامل</a>
+                    </p>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h6 class="text-uppercase fw-bold mb-4">راه های ارتباطی</h6>
+                    <p><i class="fas fa-home me-3"></i> ایران , کرج</p>
+                    <p id="emailContact">
+                        <i class="fas fa-envelope me-3"></i>
+                        MkeyhaniDeve@gmail.com
+                    </p>
+                    <p style="direction: ltr"> + 98 938 436 994 7 <i class="fas fa-phone me-3"></i></p>
+                    <p style="direction: ltr"> + 98 938 436 994 7 <i class="fas fa-print me-3"></i></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/MkeyhaniM">M-Keyhanil</a>
+    </div>
+
+</footer>
 
 <!--<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>

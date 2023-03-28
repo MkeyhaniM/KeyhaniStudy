@@ -28,6 +28,6 @@
     <h4>Main Page</h4>
     <img src="assets/img/readme/keyhanStudy.PNG" alt="keyhanStudy.PNG">
     <hr>
- <h4>SystemOperation page</h4>
+    <h4>SystemOperation page</h4>
     <img src="assets/img/readme/systemoperationPNG.PNG" alt="systemoperationPNG.PNG">
 </div> 

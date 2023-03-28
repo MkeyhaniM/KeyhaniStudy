@@ -45,32 +45,36 @@
     <div id="parentSteppes">
         <div class="steppes allowedSteppes">
             <div class="shapeStepperVertical  shadow-lg activeSteppes"><span>1</span></div>
-            <!--            <h3 class="titleStepper">معرفی</h3>-->
+            <h3 class="titleStepper">معرفی</h3>
         </div>
         <div class="steppes allowedSteppes">
             <div class="shapeStepperVertical shadow-lg"><span>2</span></div>
-            <!--            <h3 class="titleStepper">ویندوز</h3>-->
+            <h3 class="titleStepper">ویندوز</h3>
         </div>
         <div class="steppes allowedSteppes">
             <div class="shapeStepperVertical shadow-lg"><span>3</span></div>
-            <!--            <h3 class="titleStepper">لینوکس</h3>-->
+            <h3 class="titleStepper">لینوکس</h3>
         </div>
         <div class="steppes allowedSteppes">
             <div class="shapeStepperVertical shadow-lg"><span>4</span></div>
-            <!--            <h3 class="titleStepper">مک بوک</h3>-->
+            <h3 class="titleStepper">مک بوک</h3>
         </div>
         <div class="steppes">
             <div class="shapeStepperVertical shadow-lg"><span>5</span></div>
-            <!--            <h3 class="titleStepper">اندروید</h3>-->
+            <h3 class="titleStepper">اندروید</h3>
         </div>
     </div>
     <div style="direction: ltr" id="parentButtons" class="btn-group " role="group">
-        <button type="button" class="btn btn-danger shadow" id="prev">قبلی</button>
-        <button type="button" class="btn btn-primary shadow" id="next">بعدی</button>
+        <button type="button" class="btn btn-danger" id="prev" disabled>
+            <a id="linkOne" class="text-dark btn stretched-link">قبلی</a>
+        </button>
+        <button type="button" class="btn btn-primary" id="next">
+            <a id="linkTwo" class="text-light btn stretched-link">بعدی</a>
+        </button>
     </div>
 </div>
 
-<div href="introduction" class="container-fluid">
+<div class="container-fluid">
     <div id="Introduction" class="container bg-secondary bg-opacity-10 p-4 shadow-lg">
         <article id="systemOperationInter" style="direction: rtl;">
             <h3 id="headingDescribingSystemOperation" class="px-2 py-2">سیستم عامل چیست ؟</h3>
@@ -609,5 +613,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="assets/dist/js/responsive.js"></script>
 <script src="assets/dist/js/scrollbar.js"></script>
+<script src="assets/dist/js/stepperVertical.js"></script>
 </body>
 </html>

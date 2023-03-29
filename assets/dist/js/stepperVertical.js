@@ -10,9 +10,10 @@ var selectedStep = 1;
 
 prev.addEventListener("click", (e) => {
     e.preventDefault();
-    selectedStep -= 1;
     if (selectedStep == 1) {
         selectedStep = 1;
+    } else {
+        selectedStep--;
     }
     type = false;
     gettingMoving(selectedStep, type)
@@ -29,14 +30,14 @@ next.addEventListener("click", (e) => {
 
 function gettingMoving(number, bool) {
     scrollId(bool, number)
-
     for (var [index, cricles] of shapeStepperVertical.entries()) {
+        console.log(index, number)
         if (index < number && bool) {
             if (index == number) {
                 continue;
             }
             cricles.classList.add('activeSteppes')
-        } else if (index > number && !bool) {
+        } else if (index >= number && !bool) {
             cricles.classList.remove('activeSteppes')
         }
     }
@@ -55,11 +56,10 @@ function gettingMoving(number, bool) {
 }
 
 function scrollId(bool, number) {
-    console.log(number)
     const ID = ['Introduction', 'Windows', 'Linux', 'MacOs', 'Android'];
     if (bool) {
         window.location.href = '#' + ID[number - 1]
     } else if (!bool) {
-        window.location.href = '#' + ID[number - 2]
+        window.location.href = '#' + ID[number - 1]
     }
 }

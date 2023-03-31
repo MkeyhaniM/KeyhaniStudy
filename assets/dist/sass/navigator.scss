@@ -1,4 +1,8 @@
-section#allWidthHeight nav#navigator {
+.container-fluid {
+  padding: 0 0 100px 0!important;
+}
+
+.container-fluid section#allWidthHeight nav#navigator {
   width: 100% !important;
   height: 50px;
   margin: auto;
@@ -8,15 +12,15 @@ section#allWidthHeight nav#navigator {
   display: inline-block;
 }
 
-section#allWidthHeight nav#navigator div#parentUl {
+.container-fluid section#allWidthHeight nav#navigator div#parentUl {
   width: 95%;
 }
 
-section#allWidthHeight nav#navigator div#bar {
+.container-fluid section#allWidthHeight nav#navigator div#bar {
   width: 20%;
 }
 
-section#allWidthHeight nav#navigator div#bar {
+.container-fluid section#allWidthHeight nav#navigator div#bar {
   width: 5%;
   margin-left: 15px;
   padding: 25px 0 0 0;
@@ -25,15 +29,15 @@ section#allWidthHeight nav#navigator div#bar {
   justify-items: center;
 }
 
-section#allWidthHeight div#bar i {
+.container-fluid section#allWidthHeight div#bar i {
   display: none;
 }
 
-section#allWidthHeight div#bar i:hover {
+.container-fluid section#allWidthHeight div#bar i:hover {
   cursor: pointer;
 }
 
-section#allWidthHeight span#progressBar {
+.container-fluid section#allWidthHeight span#progressBar {
   z-index: 10;
   content: "";
   height: 5px;
@@ -44,7 +48,7 @@ section#allWidthHeight span#progressBar {
   position: fixed;
 }
 
-section#allWidthHeight nav#navigator div#parentUl ul {
+.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
   padding: 0 20px 0 0;
   line-height: 50px;
   list-style: none;
@@ -53,12 +57,12 @@ section#allWidthHeight nav#navigator div#parentUl ul {
   font-family: iranSanseWebBlack;
 }
 
-section#allWidthHeight nav#navigator div ul li {
+.container-fluid section#allWidthHeight nav#navigator div ul li {
   margin: 0 12px;
   font-size: 17px;
 }
 
-section#allWidthHeight nav#navigator div ul li a {
+.container-fluid section#allWidthHeight nav#navigator div ul li a {
   display: block;
   color: black;
   text-decoration: none;

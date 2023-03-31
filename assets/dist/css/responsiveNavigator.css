@@ -1,0 +1,109 @@
+@media only screen and (min-width: 320px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl {
+        max-height: 0;
+        position: relative;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: none;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar {
+        position: absolute;
+        left: 0 !important;
+        width: 5%;
+        margin-left: 15px;
+        padding: 25px 0 0 0;
+        display: flex;
+        justify-content: end;
+        justify-items: center;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNavigator {
+        display: inline-block;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation {
+        background-color: transparent !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation:hover {
+        background-color: transparent !important;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 599px) {
+    section.container-fluid section#allWidthHeight nav#navigator {
+        display: flex;
+        background-color: whitesmoke;
+        transition: all 1s ease !important;
+        height: 3rem !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive {
+        display: flex;
+        width: 100%;
+        min-height: 300px !important;
+        background-color: #f5f5f5;
+        transition: all 1s ease !important;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul li {
+        height: 40px;
+        font-family: SahelBold;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 700px) {
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3px 0 0;
+        font-family: SahelBold;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNavigator {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 750px) and (max-width: 799px) {
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3px 0 0;
+        font-family: SahelBold;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
+        display: flex;
+    }
+
+    section.container-fluid section#allWidthHeight nav#navigator div#bar {
+        display: none;
+    }
+}

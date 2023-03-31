@@ -1,34 +1,17 @@
-@import "font.css";
-@import "navigator.css";
-@import "footer.css";
-
-.container-fluid {
-    margin: 0 !important;
-    padding: 0 !important;
-}
+@import "./font.css";
+@import "./navigator.css";
+@import "./footer.css";
+@import "./responsiveNavigator.css";
 
 .container-fluid section#allWidthHeight {
     height: 100vh;
     background-color: #d9afd9;
-    background-image: linear-gradient(0deg, #0d6efd 0%, #9bcf1b 100%);
+    background-image: linear-gradient(0deg, #47B5FF 0%, #3EC70B 100%);
     box-shadow: 0 14px 13px darkgrey;
-}
-
-.container-fluid section#allWidthHeight nav#navigator {
-    width: 100% !important;
-    height: 50px;
-    margin: auto;
-    position: fixed;
-    background-color: whitesmoke;
-    z-index: 100;
-    display: inline-block;
 }
 
 .container-fluid section#allWidthHeight div#intro {
     position: relative;
-}
-
-.container-fluid section#allWidthHeight div#intro div.row {
     padding-top: 100px;
 }
 
@@ -83,8 +66,6 @@
     }
 }
 
-/*////////////////___Slider___//////////////////////*/
-
 section#parentSlider {
     background-color: rgba(126, 127, 124, 0.11);
 }
@@ -96,10 +77,6 @@ section#parentSlider section#slider {
 
 section#parentSlider section#slider div#owlSlider div img {
     border: #9bcf1b !important;
-}
-
-section#parentSlider section#slider div#owlSlider a {
-    /*text-decoration: none ;*/
 }
 
 section#parentSlider section#slider div#owlSlider div h6 {
@@ -114,15 +91,13 @@ section#parentSlider section#slider div#owlSlider div p {
     font-family: EstedadLight;
 }
 
-/*////////////////____Article___/////////////////*/
-
 section#parentArticle {
     box-shadow: 1px -14px 13px darkgrey;
 }
 
 section#parentArticle div#article {
-    border: #cdf0ea solid 3px;
-    box-shadow: 3px 3px 4px #cdf0ea;
+    border: #005ECE solid 3px;
+    box-shadow: 3px 3px 4px #005ECE;
     padding: 4px;
     border-radius: 5px 5px 5px 5px;
 }
@@ -138,7 +113,7 @@ section#parentArticle div#article div div {
     display: flex;
     padding: 5px;
     transition: all 0.6s ease-in;
-    border-right: 2px solid #cdf0ea;
+    border-right: 2px solid #005ECE;
 }
 
 section#parentArticle div#article div div:hover {
@@ -155,11 +130,12 @@ section#parentArticle div#article div div p {
 }
 
 section#parentArticle div#article div div span {
-    background: url("/assets/img/arrow/down.png");
+    background: url("https://www.svgrepo.com/show/137967/left-arrow.svg");
     display: inline-block;
     width: 40px;
+    margin-left: 6px;
     line-height: 10px;
-    background-size: 14px;
+    background-size: 18px;
     background-position: left center;
     background-repeat: no-repeat;
 }
@@ -272,23 +248,13 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div {
     background-color: azure;
 }
 
-section#showSomeSystems
-section#parentSystemOperation
-div.row
-div.col-xl-4
-div
-h3 {
+section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div h3 {
     font-family: Digikala;
     margin: 60px 20px 0 0;
     display: inline-block;
 }
 
-section#showSomeSystems
-section#parentSystemOperation
-div.row
-div.col-xl-4
-div
-p {
+section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 div p {
     margin: 18px 0 0 0;
     padding: 0 40px 0 48px;
     font-family: Shabnam;
@@ -303,38 +269,10 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
     border-right: 1px solid silver;
 }
 
-
-/*RESPONSIVE_navgator*/
+/*////////////////RESPONSIVE*/
 
 @media only screen and (min-width: 320px) {
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl {
-        max-height: 0;
-        position: relative;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
-        display: none;
-    }
-
-    section#allWidthHeight nav#navigator div#bar {
-        position: absolute;
-        left: 0 !important;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation {
-        background-color: transparent !important;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li#systemOperation:hover {
-        background-color: transparent !important;
-    }
-
-    section#allWidthHeight div#bar i {
-        display: inline-block;
-    }
-
     section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy {
-
         font-size: 25px !important;
         padding-top: 1.7rem;
         text-align: center;
@@ -361,6 +299,7 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
     section.container-fluid section#allWidthHeight div#intro div.row ul#selectionKeyhanStudy li {
         font-size: 15px !important;
         margin-right: 20px;
+        z-index: 20;
     }
 
     section.container-fluid section#allWidthHeight div#intro div.row div#pictureOfPrefaceKeyhanStudy {
@@ -391,6 +330,7 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
 }
 
 @media only screen and (min-width: 360px) and (max-width: 400px ) {
+
     section.container-fluid section#allWidthHeight div#intro div.row h4#headingKeyhanStudy {
         font-family: Delber2 !important;
     }
@@ -424,41 +364,12 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 599px) {
-    section.container-fluid section#allWidthHeight nav#navigator {
-        display: flex;
-        background-color: whitesmoke;
-        height: 300px !important;
-        transition: all 1s ease !important;
-    }
-
     section.container-fluid section#allWidthHeight div#intro {
         padding-top: 18px !important;
     }
-
-    section.container-fluid section#allWidthHeight nav#navigator {
-        height: 3rem !important;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive {
-        display: flex;
-        width: 100%;
-        min-height: 300px !important;
-        background-color: #f5f5f5;
-        transition: all 1s ease !important;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul {
-        display: flex;
-        flex-direction: column;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl.responsive ul li {
-        height: 40px;
-        font-family: SahelBold;
-    }
 }
 
-@media only screen and (min-width: 405px) and (max-width: 570px) {
+@media only screen and (min-width: 405px) and (max-width: 600px) {
     section.container-fluid section#allWidthHeight div#intro div.row h2#headingKeyhanStudy {
         font-size: 37px !important;
         padding-top: 1.7rem;
@@ -507,7 +418,7 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 700px) {
+@media only screen and (min-width: 600px) and (max-width: 750px) {
 
     section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
         display: flex;
@@ -521,7 +432,7 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
         margin-left: 5px;
     }
 
-    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNabigation {
+    section.container-fluid section#allWidthHeight nav#navigator div#bar i#barNavigator {
         display: none;
     }
 
@@ -724,14 +635,6 @@ section#showSomeSystems section#parentSystemOperation div.row div.col-xl-4 img {
 }
 
 @media only screen and (min-width: 960px) {
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
-        display: flex;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#bar {
-        display: none;
-    }
-
     section.container-fluid section#allWidthHeight div#intro {
         position: relative;
     }

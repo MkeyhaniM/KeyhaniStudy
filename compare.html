@@ -6,9 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>مقایسه سیستم عامل</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="requied/fontawesome-free-6.2.1-web/css/all.min.css">
+<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+<!--    <link rel="stylesheet" href="requied/fontawesome-free-6.2.1-web/css/all.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/dist/css/compareSystemOperation.css">
     <link rel="stylesheet" href="assets/dist/css/selected-page.css">
 </head>
@@ -36,8 +37,182 @@
     </section>
 </section>
 
-<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+<section class="container">
+    <div class="row headingCompare shadow-lg" id="computersSystemOperation-compare">
+        <div class="col-xl-4"><h3>سیستم عامل های کامپیوتری</h3></div>
+        <div class="col-xl-8 btn-group" id="btnChooseSystemOperation-computer" role="group"
+             aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="WindowsBtn" autocomplete="off">
+            <label class="btn btn-outline-primary btnCompare" for="WindowsBtn">ویندوز</label>
+
+            <input type="checkbox" class="btn-check" id="LinuxBtn" autocomplete="off">
+            <label class="btn btn-outline-warning btnCompare" for="LinuxBtn">لینوکس</label>
+
+            <input type="checkbox" class="btn-check" id="MacbookBtn" autocomplete="off">
+            <label class="btn btn-outline-danger btnCompare" for="MacbookBtn">مک بوک</label>
+        </div>
+        <div class="compare py-5 px-3">
+            <table class="table table-bordered border-dark table-striped border border-1">
+                <thead class="table-dark">
+                <tr>
+                    <th scope="col">داده ها</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">رابط کاربری</th>
+                </tr>
+                <tr>
+                    <th scope="row">گواهی نامه ها و مجوز ها</th>
+                </tr>
+                <tr>
+                    <th scope="row">سهولت استفاده</th>
+                </tr>
+                <tr>
+                    <th scope="row">پشتیبانی</th>
+                </tr>
+                <tr>
+                    <th scope="row">تنوع</th>
+                </tr>
+                <tr>
+                    <th scope="row">سرعت</th>
+                </tr>
+                <tr>
+                    <th scope="row">حریم خصوصی</th>
+                </tr>
+                <tr>
+                    <th scope="row">امنیت</th>
+                </tr>
+                <tr>
+                    <th scope="row">استفاده از خط فرمان</th>
+                </tr>
+                <tr>
+                    <th scope="row">قابل اطمینان</th>
+                </tr>
+                <tr>
+                    <th scope="row">بروزسانی</th>
+                </tr>
+                <tr>
+                    <th scope="row">بازی</th>
+                </tr>
+                </tbody>
+                <tbody>
+                <tr class="bg-secondary">
+                    <th scope="row" class="text-light text-center">نتیجه مقایسه</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row headingCompare shadow-lg" id="smartphoneSystemOperation-compare">
+        <div class="col-xl-4"><h3>سیستم عامل های تلفن هوشمند</h3></div>
+        <div class="col-xl-8 btn-group" id="btnChooseSystemOperation-smartphone" role="group"
+             aria-label="Basic checkbox toggle button group">
+            <input type="checkbox" class="btn-check" id="AndroidBtn" autocomplete="off">
+            <label class="btn btn-outline-success" for="AndroidBtn">اندروید</label>
+
+            <input type="checkbox" class="btn-check" id="IosBtn" autocomplete="off">
+            <label class="btn btn-outline-dark" for="IosBtn">ای او اس</label>
+        </div>
+        <div class="compare py-5 px-3">
+            <table class="table table-striped border ">
+                <thead>
+                <tr>
+                    <th scope="col">داده ها</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">تاریخ اولین عرضه</th>
+                </tr>
+                <tr>
+                    <th scope="row">آخرین نسخه</th>
+                </tr>
+                <tr>
+                    <th scope="row">انتقال اطلاعات</th>
+                </tr>
+                <tr>
+                    <th scope="row">ویجت (ابزارک‌ها)</th>
+                </tr>
+                <tr>
+                    <th scope="row">نرم افزار وب گردی</th>
+                </tr>
+                <tr>
+                    <th scope="row">نرم افزار ردیابی</th>
+                </tr>
+                <tr>
+                    <th scope="row">نرم افزار تماس تصویری</th>
+                </tr>
+                <tr>
+                    <th scope="row">دستیار صوتی</th>
+                </tr>
+                <tr>
+                    <th scope="row">نرم افزار دانلود برنامه</th>
+                </tr>
+                <tr>
+                    <th scope="row"> میزان مصرف باتری</th>
+                </tr>
+                <tr>
+                    <th scope="row">گالری پیش فرض </th>
+                </tr>
+                <tr>
+                    <th scope="row"> امنیت</th>
+                </tr>
+                <tr>
+                    <th scope="row">افزایش دسترسی کاربران </th>
+                </tr>
+                <tr>
+                    <th scope="row"> نحوه باز گشایی قفل صفحه</th>
+                </tr>
+                <tr>
+                    <th scope="row"> قابل دسترس در کمپانی‌های</th>
+                </tr>
+                <tr>
+                    <th scope="row">قابل استفاده با زبان‌های مختلف</th>
+                </tr>
+                <tr>
+                    <th scope="row">اوپن سورس</th>
+                </tr>
+                <tr>
+                    <th scope="row">فایل منیجر (میدریت فایل‌ها)</th>
+                </tr>
+                <tr>
+                    <th scope="row">فضاهای ابری</th>
+                </tr>
+                <tr>
+                    <th scope="row">خانواده سیستم عامل</th>
+                </tr>
+                <tr>
+                    <th scope="row">پشتیبانی از جک 3.5 میلی متری</th>
+                </tr>
+                <tr>
+                    <th scope="row">طراحی کننده سیستم عامل</th>
+                </tr>
+                <tr>
+                    <th scope="row">نوع سورس</th>
+                </tr>
+                <tr>
+                    <th scope="row">نرم افزار ارسال پیام</th>
+                </tr>
+                <tr>
+                    <th scope="row">برنامه‌های موجود</th>
+                </tr>
+                <tr>
+                    <th scope="row">امکان نصب برنامه‌ها</th>
+                </tr>
+                <tr>
+                    <th scope="row">نحوه کار کردن با سیستم عامل</th>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!--<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="assets/dist/js/responsive.js"></script>
 <script src="assets/dist/js/scrollbar.js"></script>
+<script src='assets/dist/js/compare.js'></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 700px) {
+@media only screen and (min-width: 600px) {
 
     section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
         display: flex;
@@ -69,7 +69,7 @@
     }
 
     section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
-        font-size: 12px;
+        font-size: 11px;
         margin-left: 5px;
     }
 
@@ -79,26 +79,7 @@
 
 }
 
-@media only screen and (min-width: 750px) and (max-width: 799px) {
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
-        display: flex;
-        flex-direction: row;
-        padding: 0 3px 0 0;
-        font-family: SahelBold;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
-        font-size: 12px;
-        margin-left: 5px;
-    }
-
-    section.container-fluid section#allWidthHeight nav#navigator div#bar {
-        display: none !important;
-    }
-}
-
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 768px) {
     section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul {
         display: flex;
     }
@@ -107,3 +88,13 @@
         display: none;
     }
 }
+
+@media only screen and (min-width: 960px) {
+    section.container-fluid section#allWidthHeight nav#navigator div#parentUl ul li {
+        font-size: 15px;
+    }
+}
+
+/*@media only screen and (min-width: 1140px) {*/
+/*  */
+/*}*/

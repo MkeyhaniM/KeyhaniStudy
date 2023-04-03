@@ -1,3 +1,30 @@
 @import "./font.css";
 @import "./navigator.css";
 @import "./responsiveNavigator.css";
+
+section.container div.headingCompare {
+    direction: rtl;
+    border-radius: 9px;
+    padding: 2rem;
+    margin: 0 0 5rem 0;
+}
+
+section.container div#computersSystemOperation-compare div:first-child h3,
+section.container div#smartphoneSystemOperation-compare div:first-child h3 {
+    font-family: EstedadLight;
+}
+
+section.container div.headingCompare div#btnChooseSystemOperation-computer,
+section.container div.headingCompare div#btnChooseSystemOperation-smartphone {
+    direction: ltr;
+}
+
+section.container div#smartphoneSystemOperation-compare #btnChooseSystemOperation-smartphone label,
+section.container div#computersSystemOperation-compare #btnChooseSystemOperation-computer label {
+    font-family: EstedadNormal;
+    font-size: 20px;
+}
+
+section.container div.row div.compare table {
+    font-family:  koheNoor-Medium;
+}

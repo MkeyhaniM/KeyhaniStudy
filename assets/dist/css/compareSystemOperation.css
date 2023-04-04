@@ -26,5 +26,10 @@ section.container div#computersSystemOperation-compare #btnChooseSystemOperation
 }
 
 section.container div.row div.compare table {
-    font-family:  koheNoor-Medium;
+    font-family: koheNoor-Medium;
 }
+
+section.container div.row div.compare table thead, section.container div.row div.compare table tbody {
+    font-size: 13px;
+}
+

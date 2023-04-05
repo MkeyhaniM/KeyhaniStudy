@@ -6,12 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>مقایسه سیستم عامل</title>
-<!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
-<!--    <link rel="stylesheet" href="requied/fontawesome-free-6.2.1-web/css/all.min.css">-->
+    <!--    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">-->
+    <!--    <link rel="stylesheet" href="requied/fontawesome-free-6.2.1-web/css/all.min.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/dist/css/compareSystemOperation.css">
     <link rel="stylesheet" href="assets/dist/css/selected-page.css">
+    <link rel="stylesheet" href="assets/dist/css/footer.css">
 </head>
 <body>
 
@@ -52,7 +53,7 @@
             <label class="btn btn-outline-danger btnCompare" for="MacbookBtn">مک بوک</label>
         </div>
         <div class="compare py-5 px-3">
-            <table class="table table-responsive table-bordered border-dark table-striped border border-1">
+            <table class="compareSystemComputer table t-computer table-responsive table-bordered border-dark table-striped border border-1">
                 <thead class="table-dark">
                 <tr>
                     <th scope="col">داده ها</th>
@@ -96,9 +97,6 @@
                     <th scope="row">بازی</th>
                 </tr>
                 </tbody>
-<!--                <tr class="bg-secondary">-->
-<!--                    <th scope="row" class="text-light text-center">نتیجه مقایسه</th>-->
-<!--                </tr>-->
             </table>
         </div>
     </div>
@@ -107,14 +105,13 @@
         <div class="col-xl-8 btn-group" id="btnChooseSystemOperation-smartphone" role="group"
              aria-label="Basic checkbox toggle button group">
             <input type="checkbox" class="btn-check" id="AndroidBtn" autocomplete="off">
-            <label class="btn btn-outline-success" for="AndroidBtn">اندروید</label>
-
+            <label class="btn btn-outline-success btnCompareSP" for="AndroidBtn">اندروید</label>
             <input type="checkbox" class="btn-check" id="IosBtn" autocomplete="off">
-            <label class="btn btn-outline-dark" for="IosBtn">ای او اس</label>
+            <label class="btn btn-outline-dark btnCompareSP" for="IosBtn">ای او اس</label>
         </div>
         <div class="compare py-5 px-3">
-            <table class="table table-striped border ">
-                <thead>
+            <table class="table t-smartphone table-striped border ">
+                <thead class="table-dark">
                 <tr>
                     <th scope="col">داده ها</th>
                 </tr>
@@ -151,19 +148,19 @@
                     <th scope="row"> میزان مصرف باتری</th>
                 </tr>
                 <tr>
-                    <th scope="row">گالری پیش فرض </th>
+                    <th scope="row">گالری پیش فرض</th>
                 </tr>
                 <tr>
-                    <th scope="row"> امنیت</th>
+                    <th scope="row">امنیت</th>
                 </tr>
                 <tr>
-                    <th scope="row">افزایش دسترسی کاربران </th>
+                    <th scope="row">افزایش دسترسی کاربران</th>
                 </tr>
                 <tr>
-                    <th scope="row"> نحوه باز گشایی قفل صفحه</th>
+                    <th scope="row">نحوه باز گشایی قفل صفحه</th>
                 </tr>
                 <tr>
-                    <th scope="row"> قابل دسترس در کمپانی‌های</th>
+                    <th scope="row">قابل دسترس در کمپانی‌های</th>
                 </tr>
                 <tr>
                     <th scope="row">قابل استفاده با زبان‌های مختلف</th>
@@ -206,7 +203,93 @@
         </div>
     </div>
 </section>
+<footer class="text-center text-lg-start bg-light text-muted" style="direction: rtl">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+            <span>با ما همراه باشید در صفحات مجازی دیگر</span>
+        </div>
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
 
+    </section>
+
+    <section id="in">
+        <div class="container text-center text-md-start mt-5">
+            <div style="text-align: right" class="row mt-3">
+                <div class="col-m-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        معرفی
+                    </h6>
+                    <p>
+                        در این وب سایت شما می توانید از اخرین اخبار دیگه تکنولوژی با خبر شوید و شناخت خود را نسبت به
+                        دنیا جدیدافزایش دهید.
+                        میتوانید بین عوامل های مقایسه انجام بدهید.
+                    </p>
+
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        مفید
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">اب و هوا</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">مقایسه</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">تکنولوژی</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset text-decoration-none">سیستم عامل</a>
+                    </p>
+                </div>
+
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                    <h6 class="text-uppercase fw-bold mb-4">راه های ارتباطی</h6>
+                    <p><i class="fas fa-home me-3"></i> ایران , کرج</p>
+                    <p id="emailContact">
+                        <i class="fas fa-envelope me-3"></i>
+                        MkeyhaniDeve@gmail.com
+                    </p>
+                    <p style="direction: ltr"> + 98 938 436 994 7 <i class="fas fa-phone me-3"></i></p>
+                    <p style="direction: ltr"> + 98 938 436 994 7 <i class="fas fa-print me-3"></i></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2022 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/MkeyhaniM">M-Keyhanil</a>
+    </div>
+
+</footer>
 <!--<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="assets/dist/js/responsive.js"></script>

@@ -30,4 +30,6 @@
     <hr>
     <h4>SystemOperation page</h4>
     <img src="assets/img/readme/systemoperationPNG.PNG" alt="systemoperationPNG.PNG">
+    <h4>Compare page</h4>
+    <img src="assets/img/readme/compareSystemOperationOnpage.PNG" alt="compareSystemOperationOnpage.PNG">
 </div> 

@@ -30,6 +30,21 @@ section.container div.row div.compare table {
 }
 
 section.container div.row div.compare table thead, section.container div.row div.compare table tbody {
-    font-size: 13px;
+    font-size: 16px;
 }
 
+.leastScore {
+    background-color: #d62828 !important;
+}
+
+.appropriateScore {
+    background-color: #fee440 !important;
+}
+
+.greatScore {
+    background-color: #70e000 !important;
+}
+
+.nealyPerfectScore {
+    background-color: #006400 !important;
+}

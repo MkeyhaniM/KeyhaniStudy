@@ -32,4 +32,6 @@
     <img src="assets/img/readme/systemoperationPNG.PNG" alt="systemoperationPNG.PNG">
     <h4>Compare page</h4>
     <img src="assets/img/readme/compareSystemOperationOnpage.PNG" alt="compareSystemOperationOnpage.PNG">
+    <h4>Weather page</h4>
+    <img src="assets/img/readme/weather.PNG" alt="weather">
 </div> 

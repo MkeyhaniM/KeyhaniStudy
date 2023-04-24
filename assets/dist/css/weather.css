@@ -1,0 +1,96 @@
+@import "./font.css";
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+
+body {
+  overflow-x: hidden;
+}
+
+body {
+  transform-origin: 50% 50%;
+  -webkit-animation: scale var(--timeline) var(--delay) infinite linear;
+  animation: scale var(--timeline) var(--delay) infinite linear;
+}
+
+section#getWeather {
+  height: 100vh;
+  background-image: url("./../../img/weather/sky.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+section#getWeather div#introdutingWeather {
+  margin: 50px auto;
+}
+
+section#getWeather div#introdutingWeather h1 {
+  font-size: 40px;
+  padding-top: 200px;
+  font-family: Delber2;
+}
+
+section#getWeather div#introdutingWeather h4 {
+  font-family: EstedadLight;
+}
+
+section#getWeather div#introdutingWeather button {
+  display: block;
+  margin: 30px auto;
+  font-family: EstedadLight;
+}
+
+section#getWeather div#mainWeather {
+  display: none;
+}
+
+section#getWeather div#mainWeather div#image {
+  width: 100%;
+  display: block;
+}
+
+section#getWeather div#mainWeather h2 {
+  font-family: Digikala;
+}
+
+section#getWeather div#mainWeather div#information {
+  direction: rtl;
+}
+
+section#getWeather div#mainWeather div#weatherLocation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section#getWeather div#mainWeather div#weatherLocation table {
+  width: 700px;
+}
+
+section#getWeather div#mainWeather div#weatherLocation table tbody th {
+  font-family: EstedadThin;
+  font-size: 25px;
+  text-align: center;
+}
+
+section#getWeather div#mainWeather div#weatherLocation table tbody td {
+  font-family: "Delius", cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+section#getWeather div#mainWeather div#userIp {
+  font-family: EstedadThin;
+  text-align: center;
+}
+
+#navitatorWeather {
+  position: fixed;
+  top: 0;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}

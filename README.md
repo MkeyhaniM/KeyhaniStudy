@@ -19,6 +19,7 @@
         <li>FontAwesome</li>
         <li>Jquery</li>
         <li>OwlCarousel</li>
+        <li>Animate.css</li>
     </ul>
 </div>
 

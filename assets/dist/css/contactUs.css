@@ -1,0 +1,52 @@
+@import "./font.css";
+@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
+
+div#contactUs {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 82vh;
+  background-origin: border-box;
+  background-image: url("https://s28.picofile.com/file/8462655926/10798281_19362653.jpg");
+  background-position: top right;
+}
+
+div#contactUs div.row {
+  direction: rtl;
+  display: flex;
+  align-items: top;
+  justify-content: space-around;
+}
+
+div#contactUs div.row div {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  margin-top: 200px;
+  padding: 20px;
+}
+
+div#contactUs div.row div h2 {
+  font-family: iranSanseWeb;
+}
+
+div#contactUs div.row div:first-child p {
+  font-family: koheNoor-Medium;
+  padding: 1rem;
+}
+
+div#contactUs div.row div:last-child p {
+ font-size:21px;
+}
+
+div#contactUs div.row div:last-child p i {
+  font-size: 30px;
+}
+
+@media only screen and (max-width:600px){
+  div#contactUs div.row div {
+    margin-top: 20px;
+  }
+  
+  div#contactUs div.row div:last-child p i {
+    font-size: 20px;
+  }
+}

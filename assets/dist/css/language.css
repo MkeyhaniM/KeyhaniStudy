@@ -1,0 +1,64 @@
+@import "./font.css";
+
+#programming {
+  border: 3px solid #7149c6;
+  border-radius: 7px;
+  padding: 1rem;
+  background-color: #f6f1f1;
+}
+
+#programming h3 {
+  font-family: EstedadNormal;
+  color: #7149c6;
+}
+
+#programming div.introduting {
+  padding: 1rem;
+  font-family: koheNoor-Medium;
+}
+
+#programming div.introduting h4 {
+  border-right: 6px solid #7149c6;
+}
+
+#programming div.introduting img {
+  width: 700px;
+  display: block;
+  margin: 0 auto;
+}
+
+#programming div:last-child h4 {
+  border-right: 6px solid #7149c6;
+}
+
+#programming div:last-child {
+  font-family: koheNoor-Medium;
+}
+
+#language {
+  padding: 1rem 2rem;
+  margin: 200px auto;
+  border:3px solid #ED2B2A;
+  border-radius: 7px;
+  background-color:#FDF4F5;
+}
+
+#language div {
+  margin: 100px auto;
+}
+
+#language div h3 {
+  font-family: koheNoor-Medium;
+  border-right : 6px solid #ED2B2A;
+  padding: 0 10px;
+}
+
+#language div img {
+  width: 600px;
+  display: block;
+  margin: 50px auto;
+}
+
+#language div p {
+  font-family: Sahel;
+}

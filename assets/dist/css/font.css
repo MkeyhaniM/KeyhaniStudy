@@ -79,11 +79,6 @@
 }
 
 @font-face {
-    font-family : KalamehWebThin;
-    src:url("/assets/font/peraion/KalamehWeb/ttf/._KalamehWeb_thin.ttf");
-}
-
-@font-face {
     font-family : koheNoor-Light;
     src:url("/assets/font/peraion/kohe-noor/Kohinoor Arabic Light.TTF");
 }

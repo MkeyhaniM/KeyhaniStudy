@@ -18,10 +18,12 @@ div#contactUs div.row {
 }
 
 div#contactUs div.row div {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.8);
   box-sizing: border-box;
   margin-top: 200px;
   padding: 20px;
+  color: white;
+  border-radius: 8px;
 }
 
 div#contactUs div.row div h2 {
@@ -31,6 +33,8 @@ div#contactUs div.row div h2 {
 div#contactUs div.row div:first-child p {
   font-family: koheNoor-Medium;
   padding: 1rem;
+  font-size: 20px;
+  line-height: 50px;
 }
 
 div#contactUs div.row div:last-child p {

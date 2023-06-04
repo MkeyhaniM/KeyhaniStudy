@@ -26,7 +26,7 @@
 
 <div>
     <h3>Looking around KeyhaniStudy</h3>
-    <h4>Main Page</h4>
+    <h4>Main page</h4>
     <img src="assets/img/readme/keyhanStudy.PNG" alt="keyhanStudy.PNG">
     <hr>
     <h4>SystemOperation page</h4>
@@ -35,4 +35,10 @@
     <img src="assets/img/readme/compareSystemOperationOnpage.PNG" alt="compareSystemOperationOnpage.PNG">
     <h4>Weather page</h4>
     <img src="assets/img/readme/weather.PNG" alt="weather">
+    <h4>Technology page</h4>
+    <img src="assets/img/readme/TechnologyPNG.PNG" alt="technology">
+    <h4>Programming page</h4>
+    <img src="assets/img/readme/programming.PNG" alt="programming">
+    <h4>Contact us page</h4>
+    <img src="assets/img/readme/contactUsPNG.PNG" alt="contactUs">
 </div> 

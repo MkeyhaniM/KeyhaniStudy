@@ -1,0 +1,29 @@
+@import "./font.css";
+@import "./navigator.css";
+@import "./responsiveNavigator.css";
+
+section#technologyPage div {
+    padding: 1rem;
+}
+
+section#technologyPage div {
+    margin: 2rem 0;
+}
+
+section#technologyPage div h2 {
+    font-family: EstedadNormal,sans-serif;
+}
+
+section#technologyPage div img{
+    display: block;
+    margin: 30px auto;
+}
+
+section#technologyPage div h3 {
+    font-family: EstedadLight;
+}
+
+section#technologyPage div p {
+    margin-top: 2rem;
+    font-family: koheNoor-Medium;
+}
